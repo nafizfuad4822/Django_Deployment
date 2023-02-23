@@ -1,0 +1,10 @@
+label {
+	display: block!important;
+}
+#fb_link {
+	background: #0778E8;
+	padding: 8px 20px 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 18px;
+}

@@ -1,0 +1,18 @@
+{% extends 'Login_App/base.html' %}
+{% block title %}Register User{% endblock title %}
+{% block Login_App %}
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header p-3">
+                    <div class="card-img">
+                        <img src="media/{{User_basic_info.profile_pic}}" width="150" alt="">
+                    </div>
+                    <h3 class="mt-2 mb-1">{{User_info.username}}</h3>
+                    <h5 class="mb-3">{{User_info.email}}</h5>
+                    <a id="fb_link" class="text-light"  href="{{User_basic_info.facebook_id}}">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock  %}

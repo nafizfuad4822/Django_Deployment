@@ -1,0 +1,25 @@
+{% extends 'Login_App/base.html' %}
+{% block title %}Register User{% endblock title %}
+{% block Login_App %}
+    <div class="row justify-content-center">
+        <div class="col-7">
+            <div class="card p-4">
+                {% if registered %}
+                <div class="alert alert-info">
+                    <h3>Congratulations!!User Registered Successfully.</h3>
+                </div>
+                {% else %}
+                <div class="card-header bg-dark text-light mb-4">
+                    <h2>{{heading}}</h2>
+                </div>
+                <form action="" enctype="multipart/form-data" method="POST">
+                    {% csrf_token %}
+                    {{User_Form.as_p}}
+                    {{User_Profile_Form.as_p}}
+                    <input type="submit" class="btn btn-info" value="Register User"> 
+                </form>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock  %}
