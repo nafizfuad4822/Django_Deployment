@@ -1,0 +1,3 @@
+/home/Rony5228/Django_Deployment/User_Auth_Project/User_Auth
+/home/Rony5228/Django_Deployment/User_Auth_Project/User_Auth/User_Auth
+mysite-virtualenv
